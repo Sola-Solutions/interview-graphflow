@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "graph-flow-backend"
+version = "0.1.0"
+description = "Skeleton FastAPI backend for Graph Flow assessment"
+authors = []
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["standard"], version = "*"}
+uvicorn = {extras = ["standard"], version = "*"}
+pydantic = "*"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+ruff = "*"
+pyright = "*"
+datamodel-code-generator = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+# Enable popular flake8 rules, pyflakes, pycodestyle, isort, etc.
+select = ["E", "F", "B", "I", "W"]
+ignore = ["E501"]
+
+[tool.pyright]
+pythonVersion = "3.11"
+typeCheckingMode = "strict"
+reportMissingImports = true
+exclude = ["app/codegen/__init__.py"] 

@@ -1,0 +1,19 @@
+{
+  "name": "graph-flow-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r run build",
+    "generate:schema": "ts-node shared/generate-json-schema.ts",
+    "lint": "pnpm -r run lint",
+    "typecheck": "pnpm -r run typecheck",
+    "dev": "pnpm --filter graph-flow-frontend start"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.2",
+    "ts-node": "^10.9.2",
+    "zod": "^3.22.4",
+    "zod-to-json-schema": "^3.22.6",
+    "@types/node": "^20.11.30"
+  },
+  "packageManager": "pnpm@8.15.4"
+}

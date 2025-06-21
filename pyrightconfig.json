@@ -1,0 +1,7 @@
+{
+  "typeCheckingMode": "strict",
+  "ignore": ["backend/app/codegen/__init__.py"],
+  "pythonVersion": "3.11",
+  "reportMissingImports": true,
+  "exclude": ["**/node_modules", "**/__pycache__"]
+}

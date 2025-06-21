@@ -1,0 +1,24 @@
+# Node
+node_modules/
+*.log
+.env*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.env/
+
+# macOS
+.DS_Store
+
+# Build outputs
+frontend/build/
+coverage/
+.idea/
+.vscode/
+
+# Generated files (neil: candidates must run code generation, can remove during interview)
+backend/app/models.py
+shared/codegen/ 
